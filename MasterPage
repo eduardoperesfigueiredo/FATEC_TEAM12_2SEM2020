@@ -1,0 +1,17 @@
+public class MasterPage : System.Web.UI.UserControl
+<%@ Master Language="C#" %>  
+<!DOCTYPE html PUBLIC "Lava Jato do Martins" "http://www.lavajatodomartins.com.br">  
+<html >  
+<head runat="server">  
+    <title>MasterPage </title>  
+</head>  
+<body>  
+    <form id="form1" runat="server">  
+    <div>  
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>   
+    </div>  
+    </form>  
+</body>  
+</html>  
+
