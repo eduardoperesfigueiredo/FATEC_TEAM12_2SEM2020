@@ -18,8 +18,13 @@
   float: left;
   border: solid;     
 }
-#rodape{
+#publicidade{
   width:300px;
+  height: 300px
   float: right;
   border: solid;     
 }
+#rodape{
+  clear: both;
+  height: 60px;
+  border: solid;
