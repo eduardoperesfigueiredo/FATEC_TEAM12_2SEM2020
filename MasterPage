@@ -3,7 +3,8 @@ public class MasterPage : System.Web.UI.UserControl
 <!DOCTYPE html PUBLIC "Lava Jato do Martins" "http://www.lavajatodomartins.com.br">  
 <html >  
 <head runat="server">  
-    <title>MasterPage </title>  
+    <title>MasterPage </title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"  
 </head>  
 <body>  
     <form id="form1" runat="server">  
