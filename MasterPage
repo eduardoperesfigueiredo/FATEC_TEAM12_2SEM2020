@@ -7,9 +7,22 @@ public class MasterPage : System.Web.UI.UserControl
 </head>  
 <body>  
     <form id="form1" runat="server">  
-    <div>  
-        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
-        </asp:contentplaceholder>   
+    <div id="wrapper">
+    	<div id="cabecalho">
+
+    	</div>  
+        <div id="menu">
+
+    	</div>
+    	<div id="conteudo-dinamico">
+
+    	</div>
+    	<div id="publicidade">
+
+    	</div>
+    	<div id="rodape">
+    	<p>Todos os direitos reservados.</p>
+    	</div>   
     </div>  
     </form>  
 </body>  
