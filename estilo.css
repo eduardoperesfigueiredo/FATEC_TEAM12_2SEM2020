@@ -1,17 +1,20 @@
 #wrapper{
   width:1080px;
   margin: 0 auto;
-  border: solid;  
+  border: solid;
+  padding: 10px;  
 }
 #cabecalho{
   height:200px;
   margin: 0 auto;
-  border: solid;  
+  border: solid;
+  margin-bottom: 10px;  
 }
 #menu{
   height:60px;
   margin: 0 auto;
   border: solid;     
+  margin-bottom: 10px;
 }
 #conteudo-dinamico{
   width:720px;
@@ -28,3 +31,4 @@
   clear: both;
   height: 60px;
   border: solid;
+  margin-top: 10px;
