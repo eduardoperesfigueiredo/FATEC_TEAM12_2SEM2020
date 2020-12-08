@@ -3,12 +3,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
-        <asp:Label ID="lblServiço" runat="server" Text="Serviço:"></asp:Label>
-        <asp:TextBox ID="txtNome" runat="server"></asp:TextBox>
+        <asp:Label ID="lblServico" runat="server" Text="Serviço:"></asp:Label>
+        <br />
+        <asp:TextBox ID="txtServico" runat="server"></asp:TextBox>
     </div>
     <div>
         <asp:Label ID="lblValor" runat="server" Text="Valor:"></asp:Label>
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <br />
+        <asp:TextBox ID="txtValor" runat="server"></asp:TextBox>
     </div>
     <div>
         <asp:Button ID="btnNovo" runat="server" Text="Novo" />

@@ -15,22 +15,22 @@ namespace LavaJatodoMartins
     {
 
         /// <summary>
-        /// Controle lblServiço.
+        /// Controle lblServico.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblServiço;
+        protected global::System.Web.UI.WebControls.Label lblServico;
 
         /// <summary>
-        /// Controle txtNome.
+        /// Controle txtServico.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNome;
+        protected global::System.Web.UI.WebControls.TextBox txtServico;
 
         /// <summary>
         /// Controle lblValor.
@@ -42,13 +42,13 @@ namespace LavaJatodoMartins
         protected global::System.Web.UI.WebControls.Label lblValor;
 
         /// <summary>
-        /// Controle TextBox1.
+        /// Controle txtValor.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtValor;
 
         /// <summary>
         /// Controle btnNovo.
