@@ -24,13 +24,13 @@ namespace LavaJatodoMartins
         protected global::System.Web.UI.WebControls.Label lblData;
 
         /// <summary>
-        /// Controle txtNome.
+        /// Controle txtData.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNome;
+        protected global::System.Web.UI.WebControls.TextBox txtData;
 
         /// <summary>
         /// Controle lblAgVeiculo.
@@ -42,31 +42,31 @@ namespace LavaJatodoMartins
         protected global::System.Web.UI.WebControls.Label lblAgVeiculo;
 
         /// <summary>
-        /// Controle TextBox1.
+        /// Controle txtAgVeiculo.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtAgVeiculo;
 
         /// <summary>
-        /// Controle lblAgServiço.
+        /// Controle lblAgServico.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAgServiço;
+        protected global::System.Web.UI.WebControls.Label lblAgServico;
 
         /// <summary>
-        /// Controle TextBox2.
+        /// Controle txtAgServico.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtAgServico;
 
         /// <summary>
         /// Controle lblAgValor.
@@ -78,13 +78,13 @@ namespace LavaJatodoMartins
         protected global::System.Web.UI.WebControls.Label lblAgValor;
 
         /// <summary>
-        /// Controle TextBox3.
+        /// Controle txtAgValor.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox txtAgValor;
 
         /// <summary>
         /// Controle btnNovo.
