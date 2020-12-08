@@ -33,13 +33,13 @@ namespace LavaJatodoMartins
         protected global::System.Web.UI.WebControls.TextBox txtNome;
 
         /// <summary>
-        /// Controle Label1.
+        /// Controle lblEndereço.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblEndereço;
 
         /// <summary>
         /// Controle TextBox1.
@@ -51,13 +51,13 @@ namespace LavaJatodoMartins
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
-        /// Controle Label2.
+        /// Controle lblTelefone.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblTelefone;
 
         /// <summary>
         /// Controle TextBox2.
