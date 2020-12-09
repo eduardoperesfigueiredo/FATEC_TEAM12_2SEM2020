@@ -12,15 +12,17 @@
     <form id="form1" runat="server">
         <div>
             <h1>Lava Jato do Martins</h1>
-            <br />
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
             <asp:Label ID="lblUsuario" runat="server" Text="Usuário:"></asp:Label>
             &nbsp;
             <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUsuario" ErrorMessage="Usuário obrigatório" ForeColor="Red">*</asp:RequiredFieldValidator>
             <br />
             <br />
             <asp:Label ID="lblSenha" runat="server" Text="Senha:"></asp:Label>
             &nbsp;
-            <asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtSenha" runat="server" TextMode="Password"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtSenha" ErrorMessage="Senha obrigatória" ForeColor="Red">*</asp:RequiredFieldValidator>
             <br />
             <br />
             <asp:Button ID="btnEntrar" runat="server" Text="Entrar" OnClick="btnEntrar_Click" />
