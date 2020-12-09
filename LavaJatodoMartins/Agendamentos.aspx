@@ -22,9 +22,10 @@
         <br />
         <asp:TextBox ID="txtAgValor" runat="server"></asp:TextBox>
     </div>
+    <br />
     <div>
         <asp:Button ID="btnNovo" runat="server" Text="Novo" />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;
         <asp:Button ID="btnSalvar" runat="server" Text="Salvar" />
     </div>
     <p>

@@ -75,10 +75,10 @@
         <asp:TextBox ID="txtTelefone" runat="server"></asp:TextBox>
         <br />
     </div>
-    
+    <br />
     <div>
         <asp:Button ID="btnNovo" runat="server" Text="Novo" />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;
         <asp:Button ID="btnSalvar" runat="server" Text="Salvar" />
     </div>
     &nbsp;
