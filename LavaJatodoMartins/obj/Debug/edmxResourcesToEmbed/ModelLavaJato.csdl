@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LavaJatoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="agendamentos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="data" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="veiculo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="servico" Type="Int32" Nullable="false" />
+    <Property Name="valor" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="servicos" Relationship="Self.FK_agendamentos_servicos1" FromRole="agendamentos" ToRole="servicos" />
+    <NavigationProperty Name="veiculos" Relationship="Self.FK_agendamentos_veiculos1" FromRole="agendamentos" ToRole="veiculos" />
+  </EntityType>
+  <EntityType Name="clientes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nome" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="logradouro" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="numero" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="bairro" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cep" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cidade" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="estado" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="data_nascimento" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="telefone" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="veiculos" Relationship="Self.FK_veiculos_clientes" FromRole="clientes" ToRole="veiculos" />
+  </EntityType>
+  <EntityType Name="servicos">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="servico" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="valor" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+    <NavigationProperty Name="agendamentos" Relationship="Self.FK_agendamentos_servicos1" FromRole="servicos" ToRole="agendamentos" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="usuarios">
+    <Key>
+      <PropertyRef Name="login" />
+    </Key>
+    <Property Name="login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="senha" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nome" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="veiculos">
+    <Key>
+      <PropertyRef Name="placa" />
+    </Key>
+    <Property Name="placa" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="marca" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="modelo" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ano" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="cliente" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="agendamentos" Relationship="Self.FK_agendamentos_veiculos1" FromRole="veiculos" ToRole="agendamentos" />
+    <NavigationProperty Name="clientes" Relationship="Self.FK_veiculos_clientes" FromRole="veiculos" ToRole="clientes" />
+  </EntityType>
+  <Association Name="FK_agendamentos_servicos1">
+    <End Role="servicos" Type="Self.servicos" Multiplicity="1" />
+    <End Role="agendamentos" Type="Self.agendamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="servicos">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="agendamentos">
+        <PropertyRef Name="servico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_agendamentos_veiculos1">
+    <End Role="veiculos" Type="Self.veiculos" Multiplicity="1" />
+    <End Role="agendamentos" Type="Self.agendamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="veiculos">
+        <PropertyRef Name="placa" />
+      </Principal>
+      <Dependent Role="agendamentos">
+        <PropertyRef Name="veiculo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_veiculos_clientes">
+    <End Role="clientes" Type="Self.clientes" Multiplicity="1" />
+    <End Role="veiculos" Type="Self.veiculos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="clientes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="veiculos">
+        <PropertyRef Name="cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="lavajatoEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="agendamentos" EntityType="Self.agendamentos" />
+    <EntitySet Name="clientes" EntityType="Self.clientes" />
+    <EntitySet Name="servicos" EntityType="Self.servicos" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="usuarios" EntityType="Self.usuarios" />
+    <EntitySet Name="veiculos" EntityType="Self.veiculos" />
+    <AssociationSet Name="FK_agendamentos_servicos1" Association="Self.FK_agendamentos_servicos1">
+      <End Role="servicos" EntitySet="servicos" />
+      <End Role="agendamentos" EntitySet="agendamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_agendamentos_veiculos1" Association="Self.FK_agendamentos_veiculos1">
+      <End Role="veiculos" EntitySet="veiculos" />
+      <End Role="agendamentos" EntitySet="agendamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_veiculos_clientes" Association="Self.FK_veiculos_clientes">
+      <End Role="clientes" EntitySet="clientes" />
+      <End Role="veiculos" EntitySet="veiculos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

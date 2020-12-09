@@ -116,3 +116,7 @@ C:\Users\55179\Source\Repos\eduardoperesfigueiredo\FATEC_TEAM12_2SEM2020\LavaJat
 C:\Users\55179\Source\Repos\eduardoperesfigueiredo\FATEC_TEAM12_2SEM2020\LavaJatodoMartins\obj\Debug\LavaJatodoMartins.csproj.CopyComplete
 C:\Users\55179\Source\Repos\eduardoperesfigueiredo\FATEC_TEAM12_2SEM2020\LavaJatodoMartins\obj\Debug\LavaJatodoMartins.dll
 C:\Users\55179\Source\Repos\eduardoperesfigueiredo\FATEC_TEAM12_2SEM2020\LavaJatodoMartins\obj\Debug\LavaJatodoMartins.pdb
+C:\Git\FATEC_TEAM12_2SEM2020\LavaJatodoMartins\bin\EntityFramework.dll
+C:\Git\FATEC_TEAM12_2SEM2020\LavaJatodoMartins\bin\EntityFramework.SqlServer.dll
+C:\Git\FATEC_TEAM12_2SEM2020\LavaJatodoMartins\bin\EntityFramework.xml
+C:\Git\FATEC_TEAM12_2SEM2020\LavaJatodoMartins\bin\EntityFramework.SqlServer.xml

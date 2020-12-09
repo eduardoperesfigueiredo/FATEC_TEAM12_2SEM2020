@@ -11,7 +11,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1>Tela de login</h1>
+            <h1>Lava Jato do Martins</h1>
             <br />
             <asp:Label ID="lblUsuario" runat="server" Text="Usuário:"></asp:Label>
             &nbsp;
@@ -23,7 +23,7 @@
             <asp:TextBox ID="txtSenha" runat="server"></asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="btnEntrar" runat="server" Text="Entrar" />
+            <asp:Button ID="btnEntrar" runat="server" Text="Entrar" OnClick="btnEntrar_Click" />
         </div>
     </form>
 </body>
